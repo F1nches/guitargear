@@ -1,0 +1,56 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.router-link-active li {
+  background: #2a343d;
+}
+
+a.router-link-active li span.flaticon {
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  background: #fff;
+  border: 2px solid #fff;
+  color: #161616;
+  font-weight: 700;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.button:hover {
+  background: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.card {
+  background: #f7f7f7;
+  margin: 10px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.flaticon {
+  padding-right: 10px;
+}
