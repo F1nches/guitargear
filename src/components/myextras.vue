@@ -1,5 +1,6 @@
 <template>
   <div class="container-fluid">
+    <h1>My Extras</h1>
     <div class="card col-xs-12 row" v-for="guitar in myguitars">
       <div class="col-md-4 col-xs-6">
         <img v-bind:src="guitar.img"/>

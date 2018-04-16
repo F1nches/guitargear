@@ -4,18 +4,34 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Mono', sans-serif;
+  text-transform: uppercase;
+  color: #ee5253;
+  padding: 5px;
+  box-sizing: border-box;
+}
+h1 span.flaticon:before {
+  font-size: 40px;
+}
 a {
   text-decoration: none;
 }
-
-a.router-link-active li {
-  background: #2a343d;
+li a div, .gear-options {
+  padding-left: 20px;
+  cursor: pointer;
+}
+.submenu li a {
+  width: 100%;
+  height: calc(100%+20px);
+  display: block;
+  padding: 20px;
 }
 
-a.router-link-active li span.flaticon {
-  color: red;
+li a.router-link-active {
+  background: #2a343d;
 }
 
 ul {
@@ -23,7 +39,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+.router-link-exact-active > div {
+  background: #ee5253;
+}
 .button {
   background: #fff;
   border: 2px solid #fff;
@@ -53,4 +71,89 @@ ul {
 
 .flaticon {
   padding-right: 10px;
+}
+
+.flaticon.flaticon-shapes-1 {
+  color: #ee5253;
+}
+
+/** Scrollbars **/
+
+.scrollable {
+  overflow-y: scroll;
+}
+
+.vb > .vb-dragger {
+    z-index: 4;
+    width: 12px;
+    right: 0;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotate3d(0,0,0,0);
+    transform: rotate3d(0,0,0,0);
+    -webkit-transition:
+        background-color 100ms ease-out,
+        margin 100ms ease-out,
+        height 100ms ease-out;
+    transition:
+        background-color 100ms ease-out,
+        margin 100ms ease-out,
+        height 100ms ease-out;
+    background-color: #ee5253;
+    margin: 5px 5px 5px 0;
+    border-radius: 20px;
+    height: calc(100% - 10px);
+    display: block;
+}
+
+.vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+    background-color: #ee5253;
+}
+
+.vb > .vb-dragger:hover > .vb-dragger-styler {
+    background-color: #ee5253;
+    margin: 0px;
+    height: 100%;
+}
+
+.vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+    background-color: #ee5253;
+    margin: 0px;
+    height: 100%;
+}
+
+.vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+    background-color: #ee5253;
+}
+
+/** Guitar grid styles **/
+
+.guitar-image {
+  width: 100%;
+  height: 300px;
+}
+.guitar-container {
+  height: 100%;
+  padding: 10px;
+  background: #1e272e;
+}
+.guitar-wrapper {
+  padding: 20px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.guitar-info {
+  background: #1e272e;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.no-margin {
+  margin: 0;
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid">
-    <h1>My Amps</h1>
+    <h1>Wanted Amps</h1>
     <div class="row">
       <div class="col-lg-3 col-md-4 col-sm-6 guitar-wrapper" v-for="amp in amps">
         <div class="guitar-container">
@@ -10,7 +10,7 @@
               {{ amp.name }}
             </div>
             <div class="guitar-info col-sm-2">
-              <span class="flaticon flaticon-shapes"></span>
+              <span class="flaticon flaticon-shapes-1"></span>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'MyAmps',
+  name: 'WantedAmps',
   data () {
     return {
       amps: []
@@ -31,7 +31,7 @@ export default {
     let self = this;
     this.axios.get('/static/sample-data-amps.json').then((response) => {
       for (var i=0; i<response.data.amps.length; i++) {
-        if (response.data.amps[i].owned) {
+        if (response.data.amps[i].wanted) {
           self.amps.push(response.data.amps[i]);
         }
       }
@@ -39,6 +39,9 @@ export default {
       console.log(error);
     })
   },
+  mounted: function() {
+
+  }
 }
 </script>
 

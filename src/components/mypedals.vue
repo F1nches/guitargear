@@ -1,12 +1,19 @@
 <template>
   <div class="container-fluid">
-    <div class="card col-xs-12 row" v-for="pedal in mypedals">
-      <div class="col-md-4 col-xs-6">
-        <img v-bind:src="pedal.img"/>
-      </div>
-      <div class="col-md-8 col-xs-6">
-        <h2>{{pedal.name}}</h2>
-        <p>{{pedal.type}}</p>
+    <h1>My Pedals</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 guitar-wrapper" v-for="pedal in pedals">
+        <div class="guitar-container">
+          <div class="guitar-image image" v-bind:style="{ background: 'url(' + pedal.image + ') no-repeat center center/cover' }"></div>
+          <div class="row no-margin">
+            <div class="guitar-info col-sm-10">
+              {{ pedal.name }}
+            </div>
+            <div class="guitar-info col-sm-2">
+              <span class="flaticon flaticon-shapes"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -17,11 +24,20 @@ export default {
   name: 'Pedals',
   data () {
     return {
-      mypedals: [
-        {name:'Line 6 Helix', type: 'Multi Effects Modeler', img: '../static/helix.png'},
-        {name:'Line 6 DM4', type: 'Overdrive/Distortion', img: '../static/dm4.png'}
-      ]
+      pedals: []
     }
+  },
+  created: function() {
+    let self = this;
+    this.axios.get('/static/sample-data-pedals.json').then((response) => {
+      for (var i=0; i<response.data.pedals.length; i++) {
+        if (response.data.pedals[i].owned) {
+          self.pedals.push(response.data.pedals[i]);
+        }
+      }
+    }).catch(error => {
+      console.log(error);
+    })
   }
 }
 </script>

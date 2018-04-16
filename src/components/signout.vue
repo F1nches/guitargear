@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Login',
+  name: 'Signout',
   data () {
     return {
 

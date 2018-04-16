@@ -1,0 +1,111 @@
+{
+	"pedals": [
+		{
+			"name": "Pigtronix OFM Disnortion Micro Pedal",
+			"owned": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/OFM-Disnortion-Micro-Pedal/J50817000000000-00-220x220.jpg",
+			"features": "Filter Modes:\n1. No Filter\n2. Mid Bump (808)\n3. Low Pass (Carlos)\n4. Treble (AM Radio)\n5. Mid -Scoop (Muff)\n6. Low Pass (Bass)"
+		},
+		{
+			"name": "Pigtronix Fat Drive Tube-Sound Overdrive Guitar Effects...",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Fat-Drive-Tube-Sound-Overdrive-Guitar-Effects-Pedal/H80389000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Line 6 DM4 Distortion Modeler Pedal",
+			"owned": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/DM4-Distortion-Modeler-Pedal/150384000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Pigtronix Quantum Time Modulator Guitar Effects Pedal",
+			"wanted": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Quantum-Time-Modulator-Guitar-Effects-Pedal/H94765000000000-00-220x220.jpg"
+		},
+		{
+			"name": "DigiTech Trio+ Band Creator Plus Looper Guitar Effects...",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Trio-Band-Creator-Plus-Looper-Guitar-Effects-Pedal/J31935000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Pigtronix Bass Fat Drive Effects Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Bass-Fat-Drive-Effects-Pedal/H94399000000000-00-220x220.jpg",
+			"features": "100% Analog wide range BASS overdrive\nMulti-Stage Tube Emulated Clipping\nTouch Sensitive Performance\nHi / Lo gain mode switch\nPassive LPF Tone Control\nTrue Bypass Switching\nCircuit Design by Howard Davis\nSound Design by David Koltai"
+		},
+		{
+			"name": "Singular Sound BeatBuddy",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/BeatBuddy/J18654000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Boss RC-300 Loop Station",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/RC-300-Loop-Station/H78100000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Boss RC-3 Loop Station",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/RC-3-Loop-Station/H71077000000000-00-220x220.jpg"
+		},
+		{
+			"name": "TC Electronic Ditto Looper Guitar Effects Pedal",
+			"owned": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Ditto-Looper-Guitar-Effects-Pedal/H92539000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Pigtronix EP2 Envelope Phaser Guitar Effects Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/EP2-Envelope-Phaser-Guitar-Effects-Pedal/423516000000000-00-220x220.jpg",
+			"features": "LFO modulation with speed, depth and center\nblend combines LFO and envelope signals\nEnvelope travels up or down\nSide-chain trigger for beat sync\nIntelligent envelope response\nInvert switch for + or - phase\nCompact aluminum chassis\nTrue bypass switching\nAssignable resonance kill switch\nPigtronix 18VDC power supply included\nExpression effect pedal inputs for sweep and speed\nCircuit design by Howard Davis"
+		},
+		{
+			"name": "Boss TU-3 Chromatic Pedal Tuner",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/TU-3-Chromatic-Pedal-Tuner/712517000000000-00-220x220.jpg"
+		},
+		{
+			"name": "MXR M169 Carbon Copy Analog Delay Guitar Effects Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/M169-Carbon-Copy-Analog-Delay-Guitar-Effects-Pedal/150571000000000-00-220x220.jpg"
+		},
+		{
+			"name": "MXR EVH 5150 Overdrive Guitar Pedal",
+			"owned": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/EVH-5150-Overdrive-Guitar-Pedal/J27331000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Eventide H9 MAX Guitar Multi-Effects Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/H9-MAX-Guitar-Multi-Effects-Pedal/J17408000000000-00-220x220.jpg"
+		},
+		{
+			"name": "TC Electronic Polytune 3 Pedal Tuner",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Polytune-3-Pedal-Tuner/J53111000000000-00-220x220.jpg"
+		},
+		{
+			"name": "TC Electronic Hall of Fame 2 Reverb Effects Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Hall-of-Fame-2-Reverb-Effects-Pedal/J53058000000000-00-220x220.jpg"
+		},
+		{
+			"name": "TC Electronic Ditto X4 Looper Effects Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Ditto-X4-Looper-Effects-Pedal/J31315000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Fulltone OCD Obsessive Compulsive Drive Overdrive Guitar...",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/OCD-Obsessive-Compulsive-Drive-Overdrive-Guitar-Effects-Pedal/475656000000000-00-220x220.jpg"
+		},
+		{
+			"name": "DigiTech JMSXT JamMan Solo XT - Stompbox Looper with Stereo...",
+			"wanted": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/JMSXT-JamMan-Solo-XT--Stompbox-Looper-with-Stereo-I-O-and-Sync/H89866000000000-00-220x220.jpg",
+			"features": "Store over 35 minutes of stereo, CD-Quality loops in 200 internal memories\nOptional micro SDHC card can store over 16 hours* of CD-quality audio in 200 additional memories\nRecord rhythm loops and solo over them on the fly, completely Hands-Free\nSync multiple JamMan Solo XT pedals together to create a multi-track looper or loop with other musicians\nConnect to your computer via USB and use the JamManager Loop Librarian software to organize and archive your loops\nAux Input lets you import music from CD and MP3 players\nLoad up the JamMan with an entire backup band, take it with you, and perform anywhere\nSlow down or speed up any loop without changing pitch\nMetronome with multiple rhythm sounds and time signatures\nRugged metal chassis\nPower supply included\nOptional footswitch adds additional Hands-Free functionality"
+		},
+		{
+			"name": "Electro-Harmonix Canyon Delay and Looper Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Canyon-Delay-and-Looper-Pedal/J49609000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Electro-Harmonix SYNTH9 Synthesizer Machine Pedal",
+			"wanted": true,
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/SYNTH9-Synthesizer-Machine-Pedal/J51568000000000-00-220x220.jpg"
+		},
+		{
+			"name": "TC Electronic Polytune Noir Mini 2 Pedal Tuner",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Polytune-Noir-Mini-2-Pedal-Tuner/J13179000000000-00-220x220.jpg"
+		},
+		{
+			"name": "Dunlop Original Cry Baby Wah Pedal",
+			"image": "https://media.musiciansfriend.com/is/image/MMGS7/Original-Cry-Baby-Wah-Pedal/151000000000000-00-220x220.jpg"
+		}
+	]
+}

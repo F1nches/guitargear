@@ -1,13 +1,13 @@
 <template>
   <div class="container-fluid">
-    <h1>My Amps</h1>
+    <h1>Profile</h1>
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6 guitar-wrapper" v-for="amp in amps">
+      <div class="col-lg-3 col-md-4 col-sm-6 guitar-wrapper" v-for="guitar in guitars">
         <div class="guitar-container">
-          <div class="guitar-image image" v-bind:style="{ background: 'url(' + amp.image + ') no-repeat center center/cover' }"></div>
+          <div class="guitar-image image" v-bind:style="{ background: 'url(' + guitar.image + ') no-repeat center center/cover' }"></div>
           <div class="row no-margin">
             <div class="guitar-info col-sm-10">
-              {{ amp.name }}
+              {{ guitar.name }}
             </div>
             <div class="guitar-info col-sm-2">
               <span class="flaticon flaticon-shapes"></span>
@@ -21,24 +21,27 @@
 
 <script>
 export default {
-  name: 'MyAmps',
+  name: 'Profile',
   data () {
     return {
-      amps: []
+      guitars: []
     }
   },
   created: function() {
     let self = this;
-    this.axios.get('/static/sample-data-amps.json').then((response) => {
-      for (var i=0; i<response.data.amps.length; i++) {
-        if (response.data.amps[i].owned) {
-          self.amps.push(response.data.amps[i]);
+    this.axios.get('/static/sample-data-guitars.json').then((response) => {
+      for (var i=0; i<response.data.guitars.length; i++) {
+        if (response.data.guitars[i].owned) {
+          self.guitars.push(response.data.guitars[i]);
         }
       }
     }).catch(error => {
       console.log(error);
     })
   },
+  mounted: function() {
+
+  }
 }
 </script>
 

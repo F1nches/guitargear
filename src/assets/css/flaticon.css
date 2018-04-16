@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 13/04/2018 03:05
+  	Creation date: 15/04/2018 18:00
   	*/
 
 @font-face {
@@ -24,14 +24,25 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
-        font-size: 20px;
-font-style: normal;
-margin-left: 0;
+  font-size: 25px;
+  font-style: normal;
+  margin-left: 0;
 }
 
-.flaticon-exit:before { content: "\f100"; }
-.flaticon-settings:before { content: "\f101"; }
-.flaticon-guitar-pick:before { content: "\f102"; }
-.flaticon-pedal-for-guitar:before { content: "\f103"; }
-.flaticon-guitar:before { content: "\f104"; }
-.flaticon-amp:before { content: "\f105"; }
+.flaticon-mail:before { content: "\f100"; }
+.flaticon-error:before { content: "\f101"; }
+.flaticon-mic:before { content: "\f102"; }
+.flaticon-guitar-1:before { content: "\f103"; }
+.flaticon-search:before { content: "\f104"; }
+.flaticon-minus:before { content: "\f105"; }
+.flaticon-plus:before { content: "\f106"; }
+.flaticon-musician:before { content: "\f107"; }
+.flaticon-photo:before { content: "\f108"; }
+.flaticon-shapes-1:before { content: "\f109"; }
+.flaticon-shapes:before { content: "\f10a"; }
+.flaticon-exit:before { content: "\f10b"; }
+.flaticon-settings:before { content: "\f10c"; }
+.flaticon-guitar-pick:before { content: "\f10d"; }
+.flaticon-pedal-for-guitar:before { content: "\f10e"; }
+.flaticon-guitar:before { content: "\f10f"; }
+.flaticon-amp:before { content: "\f110"; }

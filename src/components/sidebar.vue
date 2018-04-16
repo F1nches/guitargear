@@ -4,16 +4,30 @@
       <img src="../assets/img/avatar.jpeg"/>
     </div>
     <ul class="parentmenu">
-      <li v-for="item in menuItems">
-        <div class="gear-options menu-item" v-on:click="show = !show">{{item.name}}</div>
-        <ul class="submenu">
-          <router-link :to="subitem.link" v-for="subitem in item.categories"><li><span class="flaticon" v-bind:class="subitem.icon"></span> {{subitem.name}}</li></router-link>
+      <li>
+        <div class="gear-options menu-item" v-on:click="activeMenuItem" v-bind:class="{active: isActive}"><span class="flaticon flaticon-plus"></span> My Gear</div>
+        <ul class="submenu" v-if="showGearMenu">
+          <li><router-link to="/guitars"><span class="flaticon flaticon-guitar"></span> My Guitars</router-link></li>
+          <li><router-link to="/amps"><span class="flaticon flaticon-amp"></span> My Amps</router-link></li>
+          <li><router-link to="/pedals"><span class="flaticon flaticon-pedal-for-guitar"></span> My Pedals</router-link></li>
+          <li><router-link to="/extras"><span class="flaticon flaticon-guitar-pick"></span> My Extras</router-link></li>
         </ul>
       </li>
-      <li><div class="gear-options menu-item" v-on:click="show = !show">Gallery</div></li>
-      <li><div class="gear-options menu-item" v-on:click="show = !show">Profile</div></li>
-      <li><div class="gear-options menu-item" v-on:click="show = !show">Settings</div></li>
-      <li><div class="gear-options menu-item" v-on:click="show = !show">Sign out</div></li>
+      <li>
+        <div class="gear-options menu-item" v-on:click="showWantedMenu = !showWantedMenu"><span class="flaticon flaticon-plus"></span> Wanted</div>
+        <ul class="submenu" v-if="showWantedMenu">
+          <li><router-link to="/wanted/guitars"><span class="flaticon flaticon-guitar"></span> Wanted Guitars</router-link></li>
+          <li><router-link to="/wanted/amps"><span class="flaticon flaticon-amp"></span> Wanted Amps</router-link></li>
+          <li><router-link to="/wanted/pedals"><span class="flaticon flaticon-pedal-for-guitar"></span> Wanted Pedals</router-link></li>
+          <li><router-link to="/wanted/extras"><span class="flaticon flaticon-guitar-pick"></span> Wanted Extras</router-link></li>
+        </ul>
+      </li>
+      <li><router-link to="/gear"><div class="gear-options menu-item" v-on:click="show = !show"><span class="flaticon flaticon-guitar"></span> Search All Gear</div></router-link></li>
+      <li><router-link to="/community"><div class="gear-options menu-item" v-on:click="show = !show"><span class="flaticon flaticon-photo"></span> Community</div></router-link></li>
+      <li><router-link to="/gallery"><div class="gear-options menu-item" v-on:click="show = !show"><span class="flaticon flaticon-photo"></span> Gallery</div></router-link></li>
+      <li><router-link to="/profile"><div class="gear-options menu-item" v-on:click="show = !show"><span class="flaticon flaticon-musician"></span> Profile</div></router-link></li>
+      <li><router-link to="/settings"><div class="gear-options menu-item" v-on:click="show = !show"><span class="flaticon flaticon-settings"></span> Settings</div></router-link></li>
+      <li><router-link to="/login"><div class="gear-options menu-item" v-on:click="show = !show"><span class="flaticon flaticon-exit"></span> Sign out</div></router-link></li>
     </ul>
   </div>
 </template>
@@ -23,42 +37,16 @@ export default {
   name: 'Sidebar',
   data () {
     return {
-      show: false,
-      exitIcon: 'flaticon-exit',
-      menuItems: [
-        {
-          name: 'My Gear',
-          categories: [
-            {name: 'Guitars', icon: 'flaticon-guitar', link: '/dashboard/guitars'},
-            {name: 'Amps', icon: 'flaticon-amp', link: '/dashboard/amps'},
-            {name: 'Pedals', icon: 'flaticon-pedal-for-guitar', link: '/dashboard/pedals'},
-            {name: 'Extras', icon: 'flaticon-guitar-pick', link: '/dashboard/extras'},
-          ]
-        },
-        {
-          name: 'Wanted',
-          categories: [
-            {name: 'Guitars', icon: 'flaticon-guitar'},
-            {name: 'Amps', icon: 'flaticon-amp'},
-            {name: 'Pedals', icon: 'flaticon-pedal-for-guitar'},
-            {name: 'Extras', icon: 'flaticon-guitar-pick'},
-          ]
-        }
-      ],
-      userData: {
-        guitars: [
-          {name: 'Gibson SG', color: 'Red'},
-          {name: 'Gibson Les Paul', color: 'Sunburst'},
-        ],
-        amps: [
-          {name: 'Marshall Half Stack', color: 'Black'}
-        ]
-      }
+      showGearMenu: false,
+      showWantedMenu: false,
+      isActive: false,
+      exitIcon: 'flaticon-exit'
     }
   },
   methods: {
     activeMenuItem: function() {
-
+      this.showGearMenu = !this.showGearMenu;
+      this.isActive = !this.isActive;
     }
   }
 }
@@ -73,12 +61,21 @@ export default {
 .avatar img {
   width: 100%;
 }
+.parentmenu {
+  font-family: 'Space Mono', sans-serif;
+  text-transform: uppercase;
+}
+.gear-options {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.gear-options.active {
+  background: #ee5253;
+}
 .menu-item {
   color: #fff;
-  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-bottom: 10px;
 }
 .menu-item ul {
   height: 0;
@@ -90,18 +87,15 @@ export default {
   visibility: visible;
   transition: 0.3s;
 }
-.parentmenu > li {
+.parentmenu > li > a > div {
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px;
   cursor: pointer;
+}
+.submenu {
+  background: #2a343d;
 }
 ul.submenu li {
   color: #fff;
-  padding: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -111,5 +105,8 @@ ul.submenu li:hover {
 }
 li a {
   color: #fff;
+}
+.submenu li a.router-link-active span.flaticon, li a.router-link-active {
+  color: #ee5253;
 }
 </style>
